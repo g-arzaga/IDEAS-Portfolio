@@ -14,15 +14,52 @@ p{
 
 #nav{ 
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 2vw;
     background-color: #827081;
     padding: 1vh 1vw;
+    justify-content: space-between;
     p{ 
         color: #e1e5f2;
         margin: 0;
     }
 }
+#navMenu{ 
+    display: flex;
+    align-items: center;
+}
+
+#navDropdown{display: none;}
+
+#navDropdown:hover{ 
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px){ 
+    #navMenu{ 
+        flex-direction: column;
+        align-items: baseline;
+        }
+    #navDropdown{ 
+        display: flex;}
+    #jumpHorizontal{display: none;}
+    #navSections{
+        display: none;
+        flex-direction: column;
+    }
+    #navSections.show{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 700px){
+    #navSections{ 
+        display: flex;
+    }
+}
+
 .navBox{ 
     display: flex;
     padding: 1vh 1vw;
