@@ -29,8 +29,9 @@ p{
     align-items: center;
 }
 
-#navDropdown{display: none;}
-
+#navDropdown{ 
+    display: none;
+}
 #navDropdown:hover{ 
     cursor: pointer;
 }
@@ -53,7 +54,6 @@ p{
     }
 
 }
-
 @media (min-width: 700px){
     #navSections{ 
         display: flex;
@@ -79,7 +79,6 @@ p{
     color: #022b3a} 
     transition: 0.25s ease-in-out;
 }
-
 
 #allSections{ 
     display: flex;
