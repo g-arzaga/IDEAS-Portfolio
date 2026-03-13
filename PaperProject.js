@@ -4,6 +4,12 @@ const constructionLabel = document.getElementById('construction');
 const slides = document.getElementsByClassName('expSlide');
 const rightArrow = document.querySelectorAll('.arrow')
 const leftArrow = document.querySelectorAll('.flipArrow')
+const navDropdown = document.getElementById('navDropdown')
+const navSections = document.getElementById('navSections')
+
+navDropdown.addEventListener('click', ()=>{
+    navSections.classList.toggle('show')
+})
 
 function showFab(label){
     const fabContainer = document.querySelectorAll('.active');
