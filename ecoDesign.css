@@ -126,7 +126,7 @@ img{
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    min-width: 360px;
+    min-width: 200px;
     gap:1vw;
     max-width: 480px;
     justify-content: center;
@@ -177,7 +177,7 @@ img{
     flex-wrap: wrap;
     gap: 2vw;
 
-    div{ min-width: 360px;}
+    div{ min-width: 200px;}
 }
 
 #row2left{ 
@@ -242,7 +242,7 @@ img{
     flex-wrap: wrap;
     gap: 1vw;
     div{ 
-        min-width: 360px;
+        min-width: 200px;
     }
 }
 

@@ -126,7 +126,7 @@ img{
     }
 }
 #landingPhoto{ 
-    min-width: 360px;
+    min-width: 200px;
     align-self: flex-start;
     box-shadow: 5px 5px 20px #827081 
 }
@@ -152,7 +152,7 @@ img{
 #landingLeft{ 
     flex: 1;
     flex-direction: column;
-    min-width: 360px;
+    min-width: 200px;
     gap: 2vh;
 }
 
@@ -174,7 +174,7 @@ img{
     gap: 3vw;
     flex-wrap: wrap;
     div{ 
-        min-width: 360px;
+        min-width: 200px;
     }
     
 }
@@ -194,7 +194,7 @@ img{
     justify-content: center;
     box-shadow: 0px 5px 10px #827081;
     div{ 
-        min-width: 360px;
+        min-width: 200px;
     }
 
 }
@@ -237,7 +237,7 @@ img{
     flex: 1;
     gap: 2vh;
     padding: 1vh 1vw;
-    min-width: 360px;
+    min-width: 200px;
 
 }
 .compLabel{ 
@@ -280,7 +280,7 @@ img{
 
 .compPic{
     width: 50%;
-    min-width: 300px;
+    min-width: 200px;
     img{ 
         aspect-ratio: 1;
     }
@@ -321,7 +321,7 @@ img{
     flex: 1;
     gap: 2vw;
     flex-wrap: wrap;
-    min-width: 360px;
+    min-width: 200px;
 }
 .probColText{ 
     flex-direction: column;
