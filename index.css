@@ -1,0 +1,238 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    background-color: #e1e5f2;
+}
+
+h2,h3{
+    font-weight: normal;
+    color: #022b3a}
+h2{ 
+    font-size: clamp(1.5rem, 1.4rem + 2vw, 2.5rem);
+        
+}
+p,li{ 
+    font-size: clamp(1rem, 0.7rem + 1vw, 1.5rem);
+    color: #454545ff;
+}
+div{ 
+    display: flex;
+}
+
+#landing{
+    display: flex;
+    padding: 2vh 4vw;
+    gap: 1vw;
+    flex-direction: column;
+    background-color:#e1e5f2;
+    align-items: center;
+}
+
+.photoDiv{
+    flex: 1;
+    border-radius: 10px;
+    border: solid white 3px;
+    overflow: hidden;
+    img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+#tabs{
+    justify-content: space-around;
+    width: 75%;
+    gap: 5vw;
+    margin: auto;
+
+}
+
+.landingTab{ 
+    flex: 1;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1vw;
+    justify-content: center;
+    background-color: #827081;
+    flex: none;
+    p{ 
+        text-align: center;
+        color: white;
+        margin: auto;
+    }
+}
+
+.landingTab:hover{ 
+    cursor: grab;
+    background-color: white;
+    transition: 0.25s ease-in-out;
+    p{ 
+        color: #454545ff;
+    }
+}
+.landingTab:active{ 
+
+    background-color: #454545ff;
+    transition: none;
+}
+
+.activeTab{ 
+    flex: 2;
+    scale: 1.2;
+}
+
+.contentSlide{
+    display: none;
+}
+.activeSlide{
+    display: flex;
+    flex: 1;
+    padding: 1.5vw;
+    border-radius: 20px;
+    background-color: #827081;
+    box-shadow: 0px 0px 20px #827081;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#aboutLeft{ 
+    min-width: 360px;
+    flex: 1;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    background-color: #e1e5f2;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px #827081;
+    p{ 
+        margin: auto 0px;
+    }
+}
+
+#aboutText{ 
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#aboutRight{ 
+    min-width: 360px;
+    flex: 1;
+    gap: 1vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+#portraitContainer{ 
+    padding: 1vw;
+    width: 80%;
+}
+#aboutPortrait{ 
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #e1e5f2
+}
+#contact{ 
+    align-items: center;
+    flex-direction: column;
+    background-color: #e1e5f2;
+    padding: 1vw 1vw;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: inset 0px 0px 10px #827081;
+}
+
+#fullName{ 
+    margin: auto;
+    h2{ 
+        margin: auto;
+        text-align: center;
+    }
+}
+
+#linkedIn{ 
+    margin: auto;
+}
+
+#email{ 
+    margin: auto;
+}
+#secondRowContact{ 
+    gap: 1vw;
+    justify-content: space-around;
+}
+
+#projects{ 
+    gap: 3vw;
+    padding: 2vw;
+    flex-wrap: wrap;
+}
+
+.projectTile{ 
+    display: flex;
+    text-decoration: none;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e1e5f2;
+    padding: 3vw;
+    border-radius: 20px;
+    gap: 2vw;
+    min-width: 200px;
+}
+
+.projectTile:hover{
+    cursor: grab;
+    scale: 1.05;
+    transition: 0.25s ease-in-out;
+}
+
+.projectUpper{ 
+    flex: 1;
+    margin: auto;
+}
+.projectPhoto{ 
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #827081;
+    img{ 
+        aspect-ratio: 1;
+    }
+}
+.projectLower{ 
+    flex: 1;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+    justify-content: space-between;
+    p{ 
+        margin: auto 0px;
+        text-align: start;
+    }
+}
+.course{ 
+    font-weight: bold;
+}
+
+
+.specCol{ 
+    flex: 1;
+    background-color: #e1e5f2;
+    padding: 2vw;
+    border-radius: 20px;
+    gap: 1vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.specTitle{ 
+    font-weight: bold;
+}
+.specList{ 
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0px auto auto auto;
+    gap: 1vw;
+}
