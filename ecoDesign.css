@@ -116,6 +116,7 @@ img{
 #row1left{
     display: flex;
     flex-grow: 1;
+    justify-content: center
 }
 #row1right{ 
     display: flex;
