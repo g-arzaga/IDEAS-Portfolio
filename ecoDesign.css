@@ -115,22 +115,17 @@ img{
 
 #row1left{
     display: flex;
-    flex-grow: 1;
+    flex:2;
     justify-content: center;
 }
 #row1right{ 
     display: flex;
-    flex-grow: 1;
-    justify-content: center;}
-
-#row1rightContent{
-    display: flex;
-    flex-grow: 1;
+    flex: 1;
+    min-width: 250px;
     flex-direction: column;
-    min-width: 200px;
     gap:1vw;
-    max-width: 480px;
-    justify-content: center;
+    padding: 3vw;
+    align-content: center;
 }
 
 
@@ -146,7 +141,9 @@ img{
 }
 
 #row1img{
-    max-width: 620px;
+
+    min-width: 250px;
+    aspect-ratio: 1;
     img{ 
     border: solid white 3px;
     }
@@ -178,7 +175,7 @@ img{
     flex-wrap: wrap;
     gap: 2vw;
 
-    div{ min-width: 200px;}
+    div{ min-width: 250px;}
 }
 
 #row2left{ 
@@ -243,7 +240,7 @@ img{
     flex-wrap: wrap;
     gap: 1vw;
     div{ 
-        min-width: 200px;
+        min-width: 250px;
     }
 }
 

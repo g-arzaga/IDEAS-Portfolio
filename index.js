@@ -13,6 +13,6 @@ function showSlide(label, tab){
     });
     let activeSlide =  document.getElementById(label);
     activeSlide.classList.toggle('activeSlide');
-    let activeTab = document.getElementById(tab)
+    let activeTab = document.getElementById(tab);
     activeTab.classList.toggle('activeTab');
 }
