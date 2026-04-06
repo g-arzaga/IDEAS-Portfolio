@@ -380,7 +380,9 @@ p{
 }
 
 #fabDigiText{ 
+    flex: 1;
     flex-direction: column;
+    min-width: 250px;
 }
 
 #fabTechContent{ 
