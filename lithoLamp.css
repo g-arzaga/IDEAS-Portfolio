@@ -271,6 +271,7 @@ img{
     margin: auto;
     gap: 2vw;
     width: 80%;
+    justify-items: center;
 }
 
 
