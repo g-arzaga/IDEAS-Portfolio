@@ -282,6 +282,7 @@ img{
 .lightingBlurb{ 
     flex: 3;
     min-width: 250px;
+    align-self: center;
     p{ 
         width: 75%;
     }
