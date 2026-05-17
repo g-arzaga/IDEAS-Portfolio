@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA IDEA292</title>
+    <link rel="stylesheet" href="waveLamp.css">
+</head>
+<body>
+    <nav id="nav">
+        <div id="navMenu">
+            <p id="navDropdown">Jump to &#8964;</p>
+            <p id="jumpHorizontal">Jump to:</p>
+        <ul id="navSections">
+            <li class="navBox"><a class="navLink" href="#inspiration">Inspiration</a></li>
+            <li class="navBox"><a class="navLink" href="#digiMod">Digital Modeling</a></li>
+            <li class="navBox"><a class="navLink" href="#fabrication">Fabrication</a></li>
+            <li class="navBox"><a class="navLink" href="#lighting">Lighting</a></li>
+            <li class="navBox"><a class="navLink" href="#sewing">Sewing</a></li>
+        </ul>
+        </div>
+        <div id="backToMain" class="navBox">
+            <a class="navLink" href="index.html">Back to main</a>
+        </div>
+    </nav>
+
+    <div id="allSections">
+        <div id="landing" class="section">
+            <div id="landingPhoto" class="photoDiv"><img src="Images/waveLanding.JPG" alt=""></div>
+            <div id="landingText">
+                <div id="number292" ><h2>IDEA292</h2></div>
+                <div id="projectBlurb"><p>Final Project: Cycling Wave Lamp</p>
+                    <p>This final project was open ended, tasking us to apply the wide range of fabrication techniques we have learned into a unique illuminated design. </p>
+                    <p>Materiality, timeline, scale, and function were all up to personal interpretation which demanded a well thought out project design.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="inspiration" class="section">
+            <div class="titles"><h2>Inspiration</h2></div>
+            <div id="inspoContent">
+                <div id="inspoText">
+                    <p>After feeling uninspired by inital project concepts, I watched the movie Point Break which reminded me of my family's love of surfing. I felt inspired to create a wave themed lamp that could rotate to simulate how water moves up the face of a wave. </p>
+                    <p>One design element I knew I wanted to include was the tube as the water curls over itself, a dream ride for most surfers. </p>
+                </div>
+                <div id="inspoImg"> 
+                    <div class="photoDiv"><img src="Images/bigWave.jpg" alt=""></div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="digiMod" class="section">
+            <div class="titles"><h2>Digital Modeling</h2></div>
+             <div id="labelContainer">
+                <div id="fullAssemblyLabel" onclick="showFab('fullAssembly','fullAssemblyLabel')" class="labels activeTab"><p>Full Assembly</p></div>
+                <div id="waveTopLabel" onclick="showFab('waveTop', 'waveTopLabel')" class="labels"><p>Wave Top</p></div>
+            </div>
+
+            <div class="digiContainer active" id="fullAssembly">
+               <div class="photoDiv digiImg" > <img src="Images/waveAssembly.png" alt=""></div>
+               <div class="digiText">
+                    <p>I modeled everything in Onshape, carefully dimensioning everything to fit together once physically fabricated.</p>
+                    <p>The full assembly contained many components including 3 triangular side pieces, rotating dowels, bearings, and the wave top. The two pieces on the left side combine leaving an interior pocket to hide the power cord wiring.</p>
+                </div>
+            </div>
+
+            <div class="digiContainer" id="waveTop">
+                <div class="digiText">
+                    <p>I created the wave top by projecting curves into a 3D space and creating lofted surfaces up to the lines. I created solids from enclosed surfaces which I then combined all together using the boolean features.</p>
+                    <p>Due to the height of this 3D print, I had to split the piece into two smaller pieces. I used a curved line that followed the existing lofted surfaces to hide this join. I also made each piece into a shell in order to let some light through and shorten print time. </p>
+                </div>
+                <div class="photoDiv digiImg"> <img src="Images/waveTop.png" alt=""></div>
+                
+            </div>
+        </div>
+
+        <div class="section" id="fabrication">
+            <div class="titles"><h2>Fabrication</h2></div>
+            <div id="fabContent">
+                <div class="fabRow" id="fRow1">
+                    <div class="photoDiv fabRowImg"><img src="Images/sideCNC.JPG" alt=""></div>
+                    <div class="fabBlurb"><p>The side walls of the wave were created from 3/4in plywood cut with the CNC router using a 1/4in endmill. Partial depth pockets were included to hold the bearings that the dowels spin in. <br><br>For double sided pieces, I included registration holes to align the cuts on opposite sides.</p></div>
+                </div>
+                <div class="fabRow" id="fRow2">
+                    <div class="fabBlurb" id="fabBlurb2"><p>The copper circuits were also cut with the CNC router using a 1/8in V-bit to separate electrical traces. A jig is fixed to the spoil board in order to align the copper plate for cutting.</p></div>
+                    <div class="photoDiv fabRowImg"><img src="Images/circuitCNC.JPG" alt=""></div>
+                    
+                </div>
+                <div class="fabRow" id="fRow3">
+                    <div class="photoDiv fabRowImg"><img src="Images/waveTopPrint.JPG" alt=""></div>
+                    <div class="fabBlurb"><p>The wave top was fabricated in two separate pieces due to exceeding the maximum print height. Print time was shortened by making it a shell rather than a solid, and gradual slopes meant no additional supports were needed.</p></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="section" id="lighting">
+            <div class="titles"><h2>Lighting</h2></div>
+            <div id="lightingContent">
+                <div id="lightingImg" class="photoDiv"><img src="Images/waveCircuit.JPG" alt=""></div>
+                <div id="lightingText">
+                    <p>The CNC routed circuit was then prepped with isopropyl alcohol before soldering. LEDs and resistors were placed in parallel with the positive bus around the edges and negative bus in the center. These elements were attached using solder paste and a heat gun.</p>
+                    <p>The power cord was fitted with an inline switch before being attached to the positive and negative channels. Two additional wires were added to connect the two copper plates into one circuit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="sewing">
+            <div class="titles"><h2>Sewing</h2></div>
+            <div id="sewingRow1">
+                <div id="sewingRow1Imgs">
+                    <div class="photoDiv sewingImg"><img src="Images/blueTape.JPG" alt=""></div>
+                    <div class="photoDiv sewingImg"><img src="Images/holePunch.JPG" alt=""></div>
+                </div>
+                <div class="sewingText">
+                    <p>To create the water, I chose a contrasting medium and decided to use fabric. I used a lightweight, sheer organza fabric attached to clear mylar to give it structure.</p>
+                    <p>I used blue tape to mark out evenly placed dots that I to trace onto the mylar. Using a center punch tool, I made holes in the clear film that I could use to sew in the fabric.   </p>
+                </div>
+
+            </div>
+            <div id="sewingRow2">
+                <div id="sewingImgLeft" class="sewingImg photoDiv"><img src="Images/blanket.JPG" alt=""></div>
+                <div class="sewingText">
+                    <p>I used a blanket stitch to attach the blue organza to the hole-punched mylar. This, combined with folded edges ensured the thin fabric wouldn't fray and unravel. </p>
+                    <p>I created detailing by folding pleats and securing them with a whipstitch. Additional detailing was added  by backstitching with white embroidery thread.</p>
+                </div>
+                <div id="sewingImgRight" class="sewingImg photoDiv"><img src="Images/topStitch.JPG" alt=""></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <script src="waveLamp.js"></script>
+</body>
+</html>

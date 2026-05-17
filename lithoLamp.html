@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GA IDEA292</title>
+    <link rel="stylesheet" href="lithoLamp.css">
+</head>
+<body>
+    <nav id="nav">
+        <div id="navMenu">
+            <p id="navDropdown">Jump to &#8964;</p>
+            <p id="jumpHorizontal">Jump to:</p>
+        <ul id="navSections">
+            <li class="navBox"><a class="navLink" href="#inspiration">Inspiration</a></li>
+            <li class="navBox"><a class="navLink" href="#digitalModeling">Digital Modeling</a></li>
+            <li class="navBox"><a class="navLink" href="#lighting">Lighting</a></li>
+            <li class="navBox"><a class="navLink" href="#finished">Finished Product</a></li>
+        </ul>
+        </div>
+        <div id="backToMain" class="navBox">
+            <a class="navLink" href="index.html">Back to main</a>
+        </div>
+    </nav>
+
+    <div id="allSections">
+        <div id="landing" class="section">
+            <div id="landingLeft" class="landingDiv">
+                <div id="courseNumber"><h2>IDEA292</h2></div>
+                <div id="projectTitle"><p>Project 2: Spotlight Lamp</p></div>
+                <div id="landingBlurb">
+                    <p>For this project, we were tasked with creating a small, free-standing desk lamp. </p>
+                    <p>This project served as an introduction to new fabrication workflows including CNC routing, soldering, 3D printing, and CAM. These are all techniques I became familiar with and informed the design of my final project following this assignment. </p>
+                </div>
+            </div>
+            <div id="landingRight" class="landingDiv">
+                <div id="landingPhoto" class="photoDiv"><img src="Images/spotlight.JPG" alt=""></div>
+            </div>
+        </div>
+        <div id="inspiration" class="section">
+            <div class="titles"><h2>Inspiration</h2></div>
+            <div id="inspoContent">
+                <div id="inspoImages">
+                    <div id="inspoImageTop">
+                        <div class="photoDiv"><img src="Images/inspo1.jpg" alt=""></div>
+                    </div>
+                    <div id="inspoImagesBot">
+                        <div class="photoDiv"><img src="Images/inspo2.jpg" alt=""></div>
+                        <div class="photoDiv"><img src="Images/inspo3.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div id="inspoText">
+                    <p>I was inspired by the way light cuts through a dark room —— starting from a narrow orgin and widening into a well defined cone. </p>
+                    <p>The base project example included a 3D print placed on top of a circuit circuit so I wanted to create a "reverse" spotlight effect where the light comes from the widest part of the cone rather than the narrowest. I also wanted to include varying shades within the cone to add depth that imitates real light rays</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="digitalModeling" class="section">
+            <div class="titles"><h2>Digital Modeling</h2></div>
+            <div id="digiModContent">
+                <div class ="compSlide active" id="compSlide1">
+                    <div class="photoDiv compPic" id="compPic1"><img src="Images/lampConeTex.png" alt=""></div>
+                    <div class="compBlurb"><p>The main component is a 3D print modeled in SOLIDWORKS. I created a lofted surface between two plane projected ellipses. <br><br>Adding a surface texture and turning the solid into a shell, the piece varied in thickness around the cone creating the visual of directional beams of light </p>
+                    </div>
+                </div>
+                <div class ="compSlide compPic" id="compSlide2">
+                    <div class="photoDiv" id="compPic2"><img src="Images/lampPrintBase.png" alt=""></div>
+                    <div class="compBlurb"><p>Another 3D printed component held the main light cone in place and housed the circuit boards. The angled surfaces allowed the LEDs to point into the tiled cone rather than normal to the desk surface.<br><br>Holes at the edges of the circuit pockets routed wires underneath the stage, allowing for a clean look.</p>
+                    </div>
+                </div>
+                <div class ="compSlide compPic" id="compSlide3">
+                    <div class="photoDiv" id="compPic3"><img src="Images/lampCircuit.png" alt=""></div>
+                    <div class="compBlurb"><p>I designed small copper circuits that fit into the pockets of the 3D printed stage. <br><br>The largest piece sits between the stage and wooden base, acting as a positive and negative bus for the hidden wires to connect to.</p>
+                    </div>
+                </div>
+                <div class ="compSlide compPic" id="compSlide4">
+                    <div class="photoDiv" id="compPic4"><img src="Images/lampWoodBlock.png" alt=""></div>
+                    <div class="compBlurb"><p>The wooden base holds the stage and circuits. An interior channel hides the primary cord that supplies power to the positive and negative bus.</p>
+                    </div>
+                </div>
+                <div class="compSlide compPic" id="compSlide5">
+                    <div class="photoDiv" id="compPic5"><img src="Images/lampAssembly.png" alt=""></div>
+                    <div class="compBlurb"><p>All components and the full assembly were created in Solidworks. <br><br>Parts were made "in context" so that they had consistent dimensions and perfectly fit together.</p>
+                    </div>
+                </div>
+                <div id="compList">
+                    <div class="compLabel" onclick="showFab('compSlide1')"><p>Cone</p></div>
+                    <div class="compLabel" onclick="showFab('compSlide2')"><p>Stage</p></div>
+                    <div class="compLabel" onclick="showFab('compSlide3')"><p>Circuit</p></div>
+                    <div class="compLabel" onclick="showFab('compSlide4')"><p>Wood Base</p></div>
+                    <div class="compLabel" onclick="showFab('compSlide5')"><p>Assembly</p></div>
+            
+                </div>
+            </div>    
+        </div>
+
+        <div id="lighting" class="section">
+            <div class="titles"><h2>Lighting</h2></div>
+            <div id="lightingContent">
+                <div class="lightingRow" id="lRow1">
+                    <div class="photoDiv lightRowImg"><img src="Images/topCircuitOn.JPG" alt=""></div>
+                    <div class="lightingBlurb"><p>The top circuits featured 1 or 2 LEDs and accompanying resistors in parallel. They were soldered using solder paste and a heat gun. </p></div>
+                </div>
+                <div class="lightingRow" id="lRow2">
+                    <div class="lightingBlurb" id="lightingBlurb2"><p>The bottom circuit connected each top circuit to a positive and negative power supply. Wires routed through the stage were then hand soldered using an iron.</p></div>
+                    <div class="photoDiv lightRowImg"><img src="Images/botCircuit.JPG" alt=""></div>
+                    
+                </div>
+                <div class="lightingRow" id="lRow3">
+                    <div class="photoDiv lightRowImg"><img src="Images/inlineSwitch.JPG" alt=""></div>
+                    <div class="lightingBlurb"><p>An inline switch was added to the cable connecting the bottom circuit to a 5V wall outlet for easy lighting control.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="finished" class="section">
+            <div class="titles"><h2>Finished Product</h2></div>
+            <div id="finContent">
+                <video class="photoDiv" id="finVid" src="Images/lithoLamp.MOV" controls controlslist="nodownload noremoteplayback" muted></video>
+                <div id="finBlurb">
+                    <p>The finished lamp has a warm yellow glow with directional shading consistent with the design intention. Gaps in the light cone mimic shadows created by obstructions in a spotlight's path. The opening at the narrow point of the cone creates a reverse spotlight that projects onto surfaces its facing.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="lithoLamp.js"></script>
+</body>
+</html>
